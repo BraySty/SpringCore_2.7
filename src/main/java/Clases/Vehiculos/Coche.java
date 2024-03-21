@@ -6,8 +6,8 @@ import interfaz.Vehiculo;
 public class Coche implements Vehiculo {
 
 	private EstadoActual estado;
-	
-	public Coche(EstadoActual estado) {
+
+	public void setEstado(EstadoActual estado) {
 		this.estado = estado;
 	}
 

@@ -18,11 +18,11 @@ public class Main {
 		
 		Vehiculo vehiculo2 = contexto.getBean("beanVehiculoCoche", Vehiculo.class);
 		
-		logger.info("Tipo: " + vehiculo.getTipoVehiculo());
-		logger.info(vehiculo.getEstadoDelMotor());
+		logger.info("El vehiculo es un: " + vehiculo.getTipoVehiculo() + 
+				"\n" + vehiculo.getEstadoDelMotor());
 		
-		logger.info("Tipo: " + vehiculo2.getTipoVehiculo());
-		logger.info(vehiculo2.getEstadoDelMotor());
+		logger.info("Tipo: " + vehiculo2.getTipoVehiculo() + 
+				"\n" + vehiculo.getEstadoDelMotor());
 		
 		contexto.close();
 		
