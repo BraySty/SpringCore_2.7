@@ -1,12 +1,16 @@
-package Main;
+package main;
+
+import java.util.logging.Logger;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import Interfaz.Vehiculo;
+import interfaz.Vehiculo;
 
-public class app {
+public class Main {
 
 	public static void main(String[] args) {
+		
+		Logger logger = Logger.getLogger(Main.class.getClass().getName());
 
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("bean.xml");
 
@@ -14,11 +18,11 @@ public class app {
 		
 		Vehiculo vehiculo2 = contexto.getBean("beanVehiculoCoche", Vehiculo.class);
 		
-		System.out.println("Tipo: " + vehiculo.getTipoVehiculo());
-		System.out.println(vehiculo.getEstadoDelMotor());
+		logger.info("Tipo: " + vehiculo.getTipoVehiculo());
+		logger.info(vehiculo.getEstadoDelMotor());
 		
-		System.out.println("Tipo: " + vehiculo2.getTipoVehiculo());
-		System.out.println(vehiculo2.getEstadoDelMotor());
+		logger.info("Tipo: " + vehiculo2.getTipoVehiculo());
+		logger.info(vehiculo2.getEstadoDelMotor());
 		
 		contexto.close();
 		

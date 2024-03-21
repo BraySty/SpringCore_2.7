@@ -1,7 +1,7 @@
-package Clases.Vehiculos;
+package clases.vehiculos;
 
-import Interfaz.EstadoActual;
-import Interfaz.Vehiculo;
+import interfaz.EstadoActual;
+import interfaz.Vehiculo;
 
 public class Coche implements Vehiculo {
 
@@ -17,13 +17,11 @@ public class Coche implements Vehiculo {
 	
 	@Override
 	public String getTipoVehiculo() {
-		// TODO Auto-generated method stub
 		return "Coche";
 	}
 
 	@Override
 	public String getEstadoDelMotor() {
-		// TODO Auto-generated method stub
 		return "El motor esta: " + estado.getEstado();
 	}
 

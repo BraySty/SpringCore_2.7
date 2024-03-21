@@ -1,6 +1,6 @@
-package Clases.Vehiculos;
+package clases.vehiculos;
 
-import Interfaz.EstadoActual;
+import interfaz.EstadoActual;
 
 public class Motor implements EstadoActual{
 
@@ -12,7 +12,6 @@ public class Motor implements EstadoActual{
 
 	@Override
 	public String getEstado() {
-		// TODO Auto-generated method stub
 		return estado;
 	}
 

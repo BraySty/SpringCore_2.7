@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
 	<bean id="dependenciaEstado" class="Clases.Vehiculos.Motor">
-		<property name="estado" value="El motor esta encendido"></property>
+		<property name="estado" value="El motor esta apagado"></property>
 	</bean>
 
 	<bean id="beanVehiculoAvion" class="Clases.Vehiculos.Avion">
